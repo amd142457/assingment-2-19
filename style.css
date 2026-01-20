@@ -81,6 +81,7 @@ span{
     color: var(--text-colo);
     cursor: pointer;
     transition: 0.3s;
+    
 }
 .btn-1:hover{
     transform: scale(1.1);
