@@ -1,6 +1,5 @@
 :root{
     --background:linear-gradient(to right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
-    
     --text-colo:#FFFFFF;
 }
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -124,10 +123,25 @@ span{
     background-image: url('assets/hero-circle.png');
     background-size: cover;
     
+    
 }
+
 .img-1{
     width: 90px;
     height: 100px;
+    animation: rotate-animation 5s infinite linear;
+}
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img-1:hover {
+  animation-play-state: paused;
+  cursor: pointer;
 }
 .microphon-container .microphone{
     display: flex;
